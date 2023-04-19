@@ -1,7 +1,7 @@
 import { api } from "./config";
 
-function getPicOfTheDay() {
-    const { copyright, date, explanation, title, url, hdurl } = api.get()
+async function getPicOfTheDay() {
+    const { copyright, date, explanation, title, url, hdurl } = await api.get()
     return { copyright, date, explanation, title, url, hdurl }
 }
 
