@@ -41,7 +41,7 @@
   color: #888;
 } */
 
-#App {
+.App {
   height: 100vh;
-  border:1px solid red;
+  border: 1px solid red;
 }

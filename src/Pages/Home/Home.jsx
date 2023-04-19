@@ -1,4 +1,5 @@
 import Button from "../../components/LinkButton/LinkButton"
+import './Home.css'
 
 function Home() {
   return (

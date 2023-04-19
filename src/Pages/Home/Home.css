@@ -1,4 +1,5 @@
-.home {
+#home {
+  height: 80%;
   display: flex;
   border: 1px solid red;
   justify-content: center;
