@@ -2,13 +2,20 @@ import { Email, Lock, Visibility, VisibilityOff } from "@mui/icons-material"
 import { Button, Card, CardActions, CardContent, CardHeader, Divider, IconButton, TextField } from "@mui/material"
 import { blue } from "@mui/material/colors"
 import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
 
 function LoginCard() {
 
   const [ isPassVisible, setIsPassVisible ] = useState(false)
 
+  const navigate = useNavigate()
+
   function handleVisibleClick() {
     setIsPassVisible(!isPassVisible)
+  }
+
+  function handleLoginClick() {
+    return navigate('/picoftheday')
   }
 
   return (
@@ -60,6 +67,7 @@ function LoginCard() {
           size='small'
           color='primary'
           variant='contained'
+          onClick={ handleLoginClick }
           >
           Login
         </Button>

@@ -3,9 +3,9 @@ import './Home.css'
 
 function Home() {
   return (
-    <main id='home'>
+    <div id='home'>
       <Button path='/login' text='LogIn'/>
-    </main>
+    </div>
   )
 }
 
