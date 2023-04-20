@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import getPicOfTheDay from "../../Services/PicOfTheDay"
-import PicCard from "../../components/PicShow/PicShow"
+import PicShow from "../../components/PicShow/PicShow"
 import './PicOfTheDay.css'
 
 function PicOfTheDay() {
@@ -15,10 +15,10 @@ function PicOfTheDay() {
   }, [])
 
   return (
-    <div id='picCard'>
+    <div id='picShow'>
       <div>
       <h2>Nasa´s Picture Of The Day</h2>
-      <PicCard pic={ pic }/>
+      <PicShow pic={ pic }/>
       </div>
     </div>
   )

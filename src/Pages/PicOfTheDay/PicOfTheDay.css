@@ -1,4 +1,4 @@
-#picCard {
+#picShow {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,4 +7,8 @@
   padding-top: 10%;
   padding-bottom: 10%;
   /* margin: auto; */
+}
+
+#picShow img {
+  max-width: 100%;
 }

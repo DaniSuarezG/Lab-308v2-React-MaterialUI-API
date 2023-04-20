@@ -15,7 +15,7 @@ export default function PicShow({ pic }) {
   }
 
   return (
-    <Card sx={{ maxWidth: 600 }}>
+    <Card sx={{ maxWidth: 700 }}>
       {/* <CardActionArea> */}
         <CardMedia
           component="img"
