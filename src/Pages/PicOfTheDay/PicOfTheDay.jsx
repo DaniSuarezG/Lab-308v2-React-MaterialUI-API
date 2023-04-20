@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import getPicOfTheDay from "../../Services/PicOfTheDay"
-import PicCard from "../../components/PicCard/PicCard"
+import PicCard from "../../components/PicShow/PicShow"
+import './PicOfTheDay.css'
 
 function PicOfTheDay() {
-  const [ pic, setPic ] = useState()
+  const [ pic, setPic ] = useState({})
 
   async function getPic() {
     setPic(await getPicOfTheDay())
@@ -12,10 +13,13 @@ function PicOfTheDay() {
   useEffect(() => {
     getPic()
   }, [])
-  
+
   return (
-    <div>
+    <div id='picCard'>
+      <div>
+      <h2>Nasa´s Picture Of The Day</h2>
       <PicCard pic={ pic }/>
+      </div>
     </div>
   )
 }
