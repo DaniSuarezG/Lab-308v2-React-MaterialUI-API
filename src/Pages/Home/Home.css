@@ -1,6 +1,5 @@
 #home {
-  /* height: 80%; */
-  min-height: 100%;
+  margin: auto 0;
   display: flex;
   /* border: 1px solid red; */
   justify-content: center;
