@@ -12,6 +12,7 @@ export default function PicShow({ pic }) {
     <Card sx={{ maxWidth: 700 }}>
       {/* <CardActionArea> */}
         <CardMedia
+          sx={{ objectFit:'contain', backgroundColor: '#EBE3DB' }}
           component="img"
           height="300"
           image={ pic.url }
