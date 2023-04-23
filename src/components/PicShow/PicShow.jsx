@@ -4,15 +4,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Divider } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { OpenInNew } from '@mui/icons-material';
 
 export default function PicShow({ pic }) {
-  const navigate = useNavigate()
-
-  function handleDownloadClick() {
-  }
-
-  function handleDownloadHDClick() {
-  }
 
   return (
     <Card sx={{ maxWidth: 700 }}>
@@ -40,16 +34,17 @@ export default function PicShow({ pic }) {
               size='small'
               color='secondary'
               variant='outlined'
-              onClick={ handleDownloadClick }
-              >
+              component='a'
+              href={ pic.url }
+            >
               Download
             </Button>
             <Button
               size='small'
               color='primary'
               variant='contained'
-              onClick={ handleDownloadHDClick }
-              >
+              href={ pic.hdurl }
+            >
               HD
             </Button>
           </CardActions>
